@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header class="header">
+            <h1>Hospital-ITO</h1>
+            <h2>Control de ingresos y egresos</h2>
+        </header>
+
+        <div class="buscador">
+            <h3>A continuación puedes buscar los ingresos o egresos de los pacientes al hospital</h3>
+
+            <form action="consulta.jsp" method="POST" target="_SELF">
+                <div>
+                    <label>Selecciona un mes: </label>
+                    <select name="mes">
+                        <option value="1">Enero</option>
+                        <option value="2">Febrero</option>
+                        <option value="3">Marzo</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Mayo</option>
+                        <option value="6">Junio</option>
+                        <option value="7">Julio</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Selecciona modalidad: </label>
+                    <select name="modalidad">
+                        <option value="ingreso">Ingreso</option>
+                        <option value="egreso">Egreso</option>
+                    </select>
+                </div>
+                <br>
+                <input class="btn" type="submit" value="Buscar">
+            </form>
+
+
+        </div>
+    </body>
+
+    <style>
+        .header {
+            background: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-family:'Segoe UI',Arial,sans-serif;
+        }
+
+        .buscador {
+            text-align: center;
+            width: 700px;
+            background: #fafafa;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 10px;
+            font-family:'Segoe UI',Arial,sans-serif;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 25px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+        }
+
+        select {
+            border: 2px solid #4a90e2;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            color: #333;
+            cursor: pointer;
+            width: 200px;
+            font-size: 15px;
+        }
+    </style>
+</html>
